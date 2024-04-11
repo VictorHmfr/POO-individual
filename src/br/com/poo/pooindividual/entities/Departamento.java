@@ -1,5 +1,8 @@
 package br.com.poo.pooindividual.entities;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Departamento {
 
 	private int id;
@@ -7,6 +10,10 @@ public class Departamento {
 	private String areaEspec;
 	private String status;
 	private String tipo;
+	
+	
+	static Map<Integer, Departamento> mapaDepartamentos = new HashMap<>();
+	
 	
 	public Departamento() {
 		super();
@@ -60,6 +67,16 @@ public class Departamento {
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
+	}
+
+	public static Map<Integer, Departamento> getMapaDepartamentos() {
+		return mapaDepartamentos;
+	}
+
+	@Override
+	public String toString() {
+		return "Departamento [id=" + id + ", nome=" + nome + ", areaEspec=" + areaEspec + ", status=" + status
+				+ ", tipo=" + tipo + "]";
 	}
 
 	

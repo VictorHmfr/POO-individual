@@ -1,6 +1,8 @@
 package br.com.poo.pooindividual.entities;
 
 import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Funcionario {
 	
@@ -14,6 +16,8 @@ public class Funcionario {
 	private String genero;
 	private int fkDep;
 	
+	
+	static Map<Integer, Funcionario> mapaFuncionarios = new HashMap<>();
 	
 	
 	public Funcionario() {
@@ -108,6 +112,17 @@ public class Funcionario {
 
 	public void setFkDep(int fkDep) {
 		this.fkDep = fkDep;
+	}
+
+	public static Map<Integer, Funcionario> getMapaFuncionarios() {
+		return mapaFuncionarios;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Funcionario [id=" + id + ", nome=" + nome + ", dataNasc=" + dataNasc + ", email=" + email + ", cargo="
+				+ cargo + ", espec=" + espec + ", cpf=" + cpf + ", genero=" + genero + ", fkDep=" + fkDep + "]";
 	}
 	
 	
