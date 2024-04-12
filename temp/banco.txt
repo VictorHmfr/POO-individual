@@ -3,8 +3,8 @@ Funcionario;2;Jessica;1998-05-20;jessicatavares234@gmail.com;Analista;Dados;346.
 Funcionario;3;Mandy;2001-05-20;mmndysouza8843@gmail.com;Gestão de vendas;Vendas;072.496.239-59;Feminino;3;
 Funcionario;4;Will;1987-05-20;willrobertsoares@gmail.com;Gerente;Administração;782.956.130-85;Masculino;4;
 Funcionario;5;Benjamin;1995-05-20;benjaminbomdepapo8842@gmail.com;Auxiliar;Produção;931.562.729-45;Masculino;5;
-Departamento;1;Departamento de Produção;Produção;Planejamento, gestão e controle de estoque;Ativo;
-Departamento;2;Departamento de Pesquisa;Pesquisa e Análise de dados;Análise e pesquisa de mercado;Ativo;
-Departamento;3;Departamento de Vendas;Vendas e Gestão de pessoas;Vendas de estoque;Ativo;
-Departamento;4;Departamento de Gerencia;Admnistração;Planejamento e gerecenciamento da empresa;Ativo;
-Departamento;5;Departamento de Produção;Produção;Planejamento, gestão e controle de estoque;Ativo;
+Departamento;1;Departamento de Produção;Produção;Ativo;Planejamento, gestão e controle de estoque;
+Departamento;2;Departamento de Pesquisa;Pesquisa e Análise de dados;Ativo;Análise e pesquisa de mercado;
+Departamento;3;Departamento de Vendas;Vendas e Gestão de pessoas;Ativo;Vendas de estoque;
+Departamento;4;Departamento de Gerencia;Admnistração;Ativo;Planejamento e gerecenciamento da empresa;
+Departamento;5;Departamento de Produção;Produção;Ativo;Planejamento, gestão e controle de estoque;
