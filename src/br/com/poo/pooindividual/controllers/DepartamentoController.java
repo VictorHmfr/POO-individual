@@ -20,10 +20,16 @@ public class DepartamentoController {
 			//Acessa o método listaNomesFuncionarios da classe FuncionarioService
 			List<Departamento> departamentos = depService.listaDepartamentos();
 			Util.customizer();
-			logger.log(Level.INFO, departamentos + "\n\nLista gerada com sucesso!");
+			logger.log(Level.INFO, "\n\nLista gerada com sucesso!");
 			
 			
 			
 		}
 	
+		public void listarDepartamentosConsole() throws IOException {
+			
+			List<Departamento> departamentosConsole = depService.listaDepartamentosConsole();
+			Util.customizer();
+			logger.log(Level.INFO, () -> departamentosConsole.toString().replace("[", "").replace("]", "").replace(",", "") + "\n\nLista gerada com sucesso!\n");
+		}
 }

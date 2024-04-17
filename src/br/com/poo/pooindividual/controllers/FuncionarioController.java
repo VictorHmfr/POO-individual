@@ -33,4 +33,12 @@ public class FuncionarioController {
 		
 	}
 
+	public void listarNomesFuncionariosCons() throws IOException {
+		
+		List<String> funcionariosConsole = funcService.listaNomesFuncionariosCons();
+		Util.customizer();
+		logger.log(Level.INFO, () -> funcionariosConsole.toString().replace("[", " ").replace("]", "").replace(",", "\n\n") + "\n\nLista gerada com sucesso!\n");
+		
+	}
+	
 }

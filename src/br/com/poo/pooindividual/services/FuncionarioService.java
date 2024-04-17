@@ -43,4 +43,18 @@ public class FuncionarioService {
 			return listaFuncionarios;
 		}
 	
+	
+		public List<String> listaNomesFuncionariosCons() throws IOException {
+		
+			List<String> listaNomesFuncionariosCons = new ArrayList<>();
+		
+			for(Funcionario func : Funcionario.getMapaFuncionarios().values()) {
+				
+				listaNomesFuncionariosCons.add(func.getNome());
+			}
+			
+			return listaNomesFuncionariosCons;
+		}
+		
+		
 }
