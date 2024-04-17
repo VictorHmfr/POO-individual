@@ -75,8 +75,10 @@ public class Departamento {
 
 	@Override
 	public String toString() {
-		return "Departamento [id=" + id + ", nome=" + nome + ", areaEspec=" + areaEspec + ", status=" + status
-				+ ", tipo=" + tipo + "]";
+		return "\nNome: " + nome +
+			   "\nArea especializada: " + areaEspec +
+			   "\nStatus: " + status +
+			   "\nTipo: " + tipo + "\n\n";
 	}
 
 	

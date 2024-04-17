@@ -121,8 +121,15 @@ public class Funcionario {
 
 	@Override
 	public String toString() {
-		return "Funcionario [id=" + id + ", nome=" + nome + ", dataNasc=" + dataNasc + ", email=" + email + ", cargo="
-				+ cargo + ", espec=" + espec + ", cpf=" + cpf + ", genero=" + genero + ", fkDep=" + fkDep + "]";
+		return 	  "\nid: " + id
+				+ "\nnome: " + nome 
+				+ "\ndataNasc: " + dataNasc 
+				+ "\nemail: " + email 
+				+ "\ncargo: " + cargo 
+				+ "\nespec: " + espec 
+				+ "\ncpf: " + cpf 
+				+ "\ngenero: " + genero
+				+ "\nfkDep: " + fkDep + "\n\n";
 	}
 	
 	
