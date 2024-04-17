@@ -122,7 +122,7 @@ public static void relatorioListaFuncionarioDepartamento(List<Funcionario> funci
 			for (Departamento departamento : departamentos) {
 				if(Objects.equals(funcionario.getFkDep(), departamento.getId())) {
 					
-			buffWrite.append("Nome do funcionário: " + funcionario.getNome() + "\nNome do departamento: \n\n" + departamento.getNome());
+			buffWrite.append("Nome do funcionário: " + funcionario.getNome() + "\nNome do departamento: " + departamento.getNome() + "\n\n");
 		}
 			}
 		}
