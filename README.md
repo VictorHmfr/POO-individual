@@ -8,6 +8,7 @@
 <ul>
     <li>Sobre o Projeto</li>
     <li>Tecnologias utilizadas</li>
+    <li>Diagramas</li>
     <li>Autores do Projeto</li>
 </ul>
 
