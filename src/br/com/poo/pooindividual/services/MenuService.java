@@ -1,6 +1,7 @@
 package br.com.poo.pooindividual.services;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,13 +22,15 @@ public class MenuService {
 					+ "\n[2]\tConsole"
 					+ "\n[0]\tSair"
 					+ "\n\nDigite uma opção: ");
-		int opcao = sc.nextInt();
 		
+		try {
+			int opcao = sc.nextInt();
 		switch (opcao) {
 		case 1:
 			SubMenuService.subMenuImpresso();
 			break;
 		case 2:
+			System.out.flush();
 			SubMenuService.subMenuConsole();
 					
 			break;
@@ -42,6 +45,8 @@ public class MenuService {
 			menu();
 			break;
 		}
+	} catch (InputMismatchException e) {
+		logger.log(Level.INFO, "InputMismatchException" + "\nInsira uma opção válida");
 	}
-
+	}
 }
