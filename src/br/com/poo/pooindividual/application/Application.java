@@ -9,20 +9,19 @@ import br.com.poo.pooindividual.services.MenuService;
 
 public class Application {
 
-	//public static Scanner sc = new Scanner(System.in);
-	
-	
+	// public static Scanner sc = new Scanner(System.in);
+
 	public static void main(String[] args) throws IOException {
-		
-		//FuncionarioService funcService = new FuncionarioService();
-		
+
+		// FuncionarioService funcService = new FuncionarioService();
+
 		RelatorioIO.leitor("banco");
 		MenuService.menu();
-		//RelatorioIO.escritor("banco");
-		//RelatorioIO.relatorioListaDepartamentos(null));
-		//RelatorioIO.relatorioListaFuncionario(funcService.listaNomesFuncionarios());
-		//sc.close();
-		
+		// RelatorioIO.escritor("banco");
+		// RelatorioIO.relatorioListaDepartamentos(null));
+		// RelatorioIO.relatorioListaFuncionario(funcService.listaNomesFuncionarios());
+		// sc.close();
+
 	}
 
 }
