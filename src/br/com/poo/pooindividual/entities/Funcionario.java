@@ -121,15 +121,15 @@ public class Funcionario {
 
 	@Override
 	public String toString() {
-		return 	  "\nid: " + id
-				+ "\nnome: " + nome 
-				+ "\ndataNasc: " + dataNasc 
-				+ "\nemail: " + email 
-				+ "\ncargo: " + cargo 
-				+ "\nespec: " + espec 
-				+ "\ncpf: " + cpf 
-				+ "\ngenero: " + genero
-				+ "\nfkDep: " + fkDep + "\n\n";
+		return 	  "id: " + id + "\n"
+				+ "nome: " + nome + "\n"
+				+ "dataNasc: " + dataNasc + "\n"
+				+ "email: " + email + "\n"
+				+ "cargo: " + cargo + "\n"
+				+ "espec: " + espec + "\n"
+				+ "cpf: " + cpf + "\n"
+				+ "genero: " + genero+ "\n"
+				+ "fkDep: " + fkDep + "\n\n";
 	}
 	
 	
