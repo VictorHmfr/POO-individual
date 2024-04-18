@@ -108,32 +108,33 @@ public class RelatorioIO {
 		buffWrite.append("\nData da requisição: " + dtfBr.format(ldt));
 		buffWrite.append("\n\n---------FIM DA LISTA DE DEPARTAMENTOS--------\n\n");
 		buffWrite.close();
-	}	
-	
-public static void relatorioListaFuncionarioDepartamento(List<Funcionario> funcionarios, List<Departamento> departamentos) throws IOException {
-	String nome = "lista-funcionário-departamento";
+	}
 
-	BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + nome + EXTENSAO, true));
+	public static void relatorioListaFuncionarioDepartamento(List<Funcionario> funcionarios,
+			List<Departamento> departamentos) throws IOException {
+		String nome = "lista-funcionário-departamento";
 
-	buffWrite.append("-------RELATÓRIO: LISTA DE FUNCIONÁRIO E DEPARTAMENTO------\n\n");
-	if (!funcionarios.isEmpty() && !departamentos.isEmpty()) {
+		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + nome + EXTENSAO, true));
+
+		buffWrite.append("-------RELATÓRIO: LISTA DE FUNCIONÁRIO E DEPARTAMENTO------\n\n");
+		if (!funcionarios.isEmpty() && !departamentos.isEmpty()) {
 //Foreach para percorrer a lista de departamentos
-		for (Funcionario funcionario : funcionarios) {
-			for (Departamento departamento : departamentos) {
-				if(Objects.equals(funcionario.getFkDep(), departamento.getId())) {
-					
-			buffWrite.append("Nome do funcionário: " + funcionario.getNome() + "\nNome do departamento: " + departamento.getNome() + "\n\n");
-		}
+			for (Funcionario funcionario : funcionarios) {
+				for (Departamento departamento : departamentos) {
+					if (Objects.equals(funcionario.getFkDep(), departamento.getId())) {
+
+						buffWrite.append("Nome do funcionário: " + funcionario.getNome() + "\nNome do departamento: "
+								+ departamento.getNome() + "\n\n");
+					}
+				}
 			}
 		}
+		LocalDateTime ldt = LocalDateTime.now();
+		buffWrite.append("\nData da requisição: " + dtfBr.format(ldt));
+		buffWrite.append("\n\n---------FIM DA LISTA DE DEPARTAMENTOS--------\n\n");
+		buffWrite.close();
 	}
-	LocalDateTime ldt = LocalDateTime.now();
-	buffWrite.append("\nData da requisição: " + dtfBr.format(ldt));
-	buffWrite.append("\n\n---------FIM DA LISTA DE DEPARTAMENTOS--------\n\n");
-	buffWrite.close();
-}	
 }
-
 
 /*
  * public static void escritor(String path) throws IOException {
