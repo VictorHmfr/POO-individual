@@ -18,6 +18,7 @@ Um menu que tem opção de imprimir até 3 tipos de relatórios no console ou em
 
 ## :hammer_and_wrench: Tecnologias utilizadas
 
+- [JavaSE17](https://www.oracle.com/br/java/technologies/downloads/#jdk17-windows)
 - [SpringToolSuite4](https://spring.io/tools)
 - [GitHub](https://github.com/)
 
