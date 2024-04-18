@@ -11,25 +11,24 @@ import br.com.poo.pooindividual.util.Util;
 
 public class DepartamentoController {
 
-	//instância do serviço do Funcionário, construção do objeto funcionarioService
-		DepartamentoService depService = new DepartamentoService();
-		static Logger logger = Util.setupLogger();
-		
-		public void listarDepartamentos() throws IOException {
-			
-			//Acessa o método listaNomesFuncionarios da classe FuncionarioService
-			List<Departamento> departamentos = depService.listaDepartamentos();
-			Util.customizer();
-			logger.log(Level.INFO, "\n\nLista gerada com sucesso!");
-			
-			
-			
-		}
-	
-		public void listarDepartamentosConsole() throws IOException {
-			
-			List<Departamento> departamentosConsole = depService.listaDepartamentosConsole();
-			Util.customizer();
-			logger.log(Level.INFO, () -> departamentosConsole.toString().replace("[", "").replace("]", "").replace(",", "") + "\n\nLista gerada com sucesso!\n");
-		}
+	// instância do serviço do Funcionário, construção do objeto funcionarioService
+	DepartamentoService depService = new DepartamentoService();
+	static Logger logger = Util.setupLogger();
+
+	public void listarDepartamentos() throws IOException {
+
+		// Acessa o método listaNomesFuncionarios da classe FuncionarioService
+		List<Departamento> departamentos = depService.listaDepartamentos();
+		Util.customizer();
+		logger.log(Level.INFO, "\n\nLista gerada com sucesso!");
+
+	}
+
+	public void listarDepartamentosConsole() throws IOException {
+
+		List<Departamento> departamentosConsole = depService.listaDepartamentosConsole();
+		Util.customizer();
+		logger.log(Level.INFO, () -> departamentosConsole.toString().replace("[", "").replace("]", "").replace(",", "")
+				+ "\n\nLista gerada com sucesso!\n");
+	}
 }
