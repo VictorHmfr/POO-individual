@@ -13,7 +13,7 @@ import br.com.poo.pooindividual.io.RelatorioIO;
 import br.com.poo.pooindividual.util.Util;
 
 public class FuncionarioService {
-	
+
 	static Logger logger = Util.setupLogger();
 
 	// Método que retorna uma lista do tipo String
@@ -63,29 +63,25 @@ public class FuncionarioService {
 	}
 
 	public List<String> listaFuncionarioDepartamentoCons() throws IOException {
-		
-        List<String> listaFuncionarioDepartamentoCons = new ArrayList<>();
-        Map<Integer, Departamento> deps = Departamento.getMapaDepartamentos();
-        for (Map.Entry<Integer, Funcionario> setFuncionario :
-            Funcionario.getMapaFuncionarios().entrySet()) {
 
+		List<String> listaFuncionarioDepartamentoCons = new ArrayList<>();
+		Map<Integer, Departamento> deps = Departamento.getMapaDepartamentos();
+		for (Map.Entry<Integer, Funcionario> setFuncionario : Funcionario.getMapaFuncionarios().entrySet()) {
 
-           logger.log(Level.INFO, setFuncionario.getValue().getNome() + " = "
-                              + deps.get(setFuncionario.getValue().getFkDep()).getNome());
-       }
-        /*for (Funcionario func : Funcionario.getMapaFuncionarios().values()) {
-            for (Departamento dep : Departamento.getMapaDepartamentos().values()) {
-                if (func.getFkDep() == dep.getId()) {
-                    listaFuncionarioDepartamentoCons.add(func.getNome());
+			logger.log(Level.INFO, setFuncionario.getValue().getNome() + " = "
+					+ deps.get(setFuncionario.getValue().getFkDep()).getNome());
+		}
+		/*
+		 * for (Funcionario func : Funcionario.getMapaFuncionarios().values()) { for
+		 * (Departamento dep : Departamento.getMapaDepartamentos().values()) { if
+		 * (func.getFkDep() == dep.getId()) {
+		 * listaFuncionarioDepartamentoCons.add(func.getNome());
+		 * 
+		 * } } }
+		 */
+		// DepartamentoService departamentoService = new DepartamentoService();
+		return listaFuncionarioDepartamentoCons;
 
-                }
-            }
-        }
-        */
-        //DepartamentoService departamentoService = new DepartamentoService();
-       return listaFuncionarioDepartamentoCons;
+	}
 
-    }
-	
-	
 }

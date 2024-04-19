@@ -48,5 +48,5 @@ public class FuncionarioController {
 		logger.log(Level.INFO, "\n\nLista gerada com sucesso!");
 
 	}
-	
+
 }

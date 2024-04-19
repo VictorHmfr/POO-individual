@@ -26,41 +26,41 @@ public class SubMenuService {
 		int opcao = sc.nextInt();
 
 		try {
-		switch (opcao) {
-		case 1:
-			Util.customizer();
-			funcController.listarNomesFuncionarios();
-			logger.log(Level.INFO, "\n\n");
-			subMenuImpresso();
+			switch (opcao) {
+			case 1:
+				Util.customizer();
+				funcController.listarNomesFuncionarios();
+				logger.log(Level.INFO, "\n\n");
+				subMenuImpresso();
 
-			break;
-		case 2:
-			Util.customizer();
-			depController.listarDepartamentos();
-			logger.log(Level.INFO, "\n\n");
-			subMenuImpresso();
+				break;
+			case 2:
+				Util.customizer();
+				depController.listarDepartamentos();
+				logger.log(Level.INFO, "\n\n");
+				subMenuImpresso();
 
-			break;
-		case 3:
-			Util.customizer();
-			funcController.listarFuncionarioDepartamento();
-			logger.log(Level.INFO, "\n\n");
-			subMenuImpresso();
+				break;
+			case 3:
+				Util.customizer();
+				funcController.listarFuncionarioDepartamento();
+				logger.log(Level.INFO, "\n\n");
+				subMenuImpresso();
 
-			break;
-		case 0:
-			MenuService.menu();
+				break;
+			case 0:
+				MenuService.menu();
 
-			break;
-		default:
-			Util.customizer();
-			logger.log(Level.INFO, "Opção inválida!");
-			subMenuImpresso();
-			break;
-		}
-		
-	} catch (InputMismatchException e) {
-		logger.log(Level.INFO, "InputMismatchException" + "\nInsira uma opção válida");
+				break;
+			default:
+				Util.customizer();
+				logger.log(Level.INFO, "Opção inválida!");
+				subMenuImpresso();
+				break;
+			}
+
+		} catch (InputMismatchException e) {
+			logger.log(Level.INFO, "InputMismatchException" + "\nInsira uma opção válida");
 		}
 	}
 
@@ -75,43 +75,43 @@ public class SubMenuService {
 		int opcao = sc.nextInt();
 
 		try {
-		switch (opcao) {
-		case 1:
-			Util.customizer();
-			logger.log(Level.INFO, "Lista Nomes dos Funcionários\n");
-			funcController.listarNomesFuncionariosCons();
-			logger.log(Level.INFO, "\n\n");
-			subMenuConsole();
+			switch (opcao) {
+			case 1:
+				Util.customizer();
+				logger.log(Level.INFO, "Lista Nomes dos Funcionários\n");
+				funcController.listarNomesFuncionariosCons();
+				logger.log(Level.INFO, "\n\n");
+				subMenuConsole();
 
-			break;
-		case 2:
-			Util.customizer();
-			logger.log(Level.INFO, "Lista de Departamentos");
-			depController.listarDepartamentosConsole();
-			logger.log(Level.INFO, "\n\n");
-			subMenuConsole();
+				break;
+			case 2:
+				Util.customizer();
+				logger.log(Level.INFO, "Lista de Departamentos");
+				depController.listarDepartamentosConsole();
+				logger.log(Level.INFO, "\n\n");
+				subMenuConsole();
 
-			break;
-		case 3:
-			Util.customizer();
-			logger.log(Level.INFO, "Lista de Funcionários e seus Departamentos\n");
-			funcController.listarFuncionarioDepartamentoCons();
-			logger.log(Level.INFO, "\n\n");
-			subMenuConsole();
+				break;
+			case 3:
+				Util.customizer();
+				logger.log(Level.INFO, "Lista de Funcionários e seus Departamentos\n");
+				funcController.listarFuncionarioDepartamentoCons();
+				logger.log(Level.INFO, "\n\n");
+				subMenuConsole();
 
-			break;
-		case 0:
-			MenuService.menu();
+				break;
+			case 0:
+				MenuService.menu();
 
-			break;
-		default:
-			Util.customizer();
-			logger.log(Level.INFO, "Opção inválida!");
-			subMenuConsole();
-			break;
+				break;
+			default:
+				Util.customizer();
+				logger.log(Level.INFO, "Opção inválida!");
+				subMenuConsole();
+				break;
+			}
+		} catch (InputMismatchException e) {
+			logger.log(Level.INFO, "InputMismatchException" + "\nInsira uma opção válida");
 		}
-	} catch (InputMismatchException e) {
-		logger.log(Level.INFO, "InputMismatchException" + "\nInsira uma opção válida");
-	}
 	}
 }

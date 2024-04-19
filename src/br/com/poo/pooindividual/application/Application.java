@@ -1,10 +1,8 @@
 package br.com.poo.pooindividual.application;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 import br.com.poo.pooindividual.io.RelatorioIO;
-import br.com.poo.pooindividual.services.FuncionarioService;
 import br.com.poo.pooindividual.services.MenuService;
 
 public class Application {
